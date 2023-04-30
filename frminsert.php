@@ -14,7 +14,7 @@
 
     //บันทึกสำเร็จแจ้งเตือนและกระโดดกลับไปหน้าฟอร์ม   
     if ($resultInsert) {
-        header("Location:http://localhost/b/index.php");
+        header("Location:http://localhost/web/index.php");
     }
 
 ?>

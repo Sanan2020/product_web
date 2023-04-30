@@ -14,7 +14,7 @@
     $resultDel = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_connect_error());
     
     if($resultDel) {
-        header("Location:http://localhost/b/index.php");
+        header("Location:http://localhost/web/index.php");
     }	
 
 ?>

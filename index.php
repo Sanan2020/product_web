@@ -59,15 +59,15 @@ td, th {
                   while ($row = mysqli_fetch_array($result)) 
                       {
                           $image = $row["Picture"];
-                          //$imageData = base64_encode(file_get_contents($image)); //เข้ารหัสสิ่งที่คุณส่งผ่านสตริง
+                          $imageData = base64_encode(file_get_contents($image)); //เข้ารหัสสิ่งที่คุณส่งผ่านสตริง
                           //https://stackoverflow.com/questions/31793512/php-display-image-from-url-into-homepage
                           echo "<tr>";
                           echo "<td align='center'>" . $row["ProductID"] . "</td>";
 
                           echo "<td>" ." <a href= 'DelUpd.php?ProductID=$row[0]' > " . $row["ProductName"] . "</a>" . "</td>";
 
-                          //echo "<td><img style= 'width:70px;' src='data:image/jpeg;base64," .$imageData."'></td>";
-                          echo "<td><img style= 'width:70px;' src='data:image/jpeg;base64'></td>";
+                          echo "<td><img style= 'width:70px;' src='data:image/jpeg;base64," .$imageData."'></td>";
+                          //echo "<td><img style= 'width:70px;' src='data:image/jpeg;base64'></td>";
 
                           echo "<td align='center'>" . $row["Category"] . "</td>";
                           echo "<td align='center'>" . $row["ProductDescription"] . "</td>";
